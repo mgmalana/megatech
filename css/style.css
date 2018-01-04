@@ -1,10 +1,91 @@
-/*
+/*External CSS*/
 
-Template 2083 Steak House
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
 
-http://www.tooplate.com/view/2083-steak-house
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 
-*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.2.1
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+
+/* Bounce To Top */
+.hvr-bounce-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
+  color: white;
+}
+.hvr-bounce-to-top:hover:before, .hvr-bounce-to-top:focus:before, .hvr-bounce-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+
+/*Custom CSS*/
+
 
 body {
 		background: #ffffff;
@@ -281,7 +362,7 @@ a:focus {
 }
 
 .navbar-default .navbar-brand .logo {
-  height:50px;
+  height:30px;
 }
 
 .navbar-default .navbar-brand .title {
@@ -661,7 +742,11 @@ footer strong {
 }
 
 footer .copyright {
-  font-size: 10px
+  font-size: 5px;
+}
+
+footer .copyright a {
+  color: #757575;
 }
 
 /* social icon section  */
@@ -788,3 +873,5 @@ footer .copyright {
 
   footer {text-align: center;}
 }
+
+
