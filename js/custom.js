@@ -147,3 +147,11 @@ $(document).ready(function() {
 
   });
 
+  /* Navbar collapse close if click outside
+    -----------------------------------------------*/
+  $(function() {
+    $(document).click(function (event) {
+      $('.navbar-collapse').collapse('hide');
+    });
+  }); 
+
